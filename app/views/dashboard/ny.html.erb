@@ -3,7 +3,7 @@
         <h1>New York</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
                 <% if user_signed_in?%>
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Book a trip now!</a></p>
+          <p><a class="btn btn-lg btn-success" href="/hotels" role="button">Book a trip now!</a></p>
         <% else %>
           <p><a class="btn btn-lg btn-success" href="/users/sign_in" role="button">Sign in to book a trip now!</a></p>
         <% end %>

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get 'paris' => 'dashboard#paris'
   get 'cancun' => 'dashboard#cancun'
   get 'index' => 'dashboard#index'
+  get 'hotels' => 'dashboard#hotels'
 
 end
