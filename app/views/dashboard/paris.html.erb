@@ -1,0 +1,29 @@
+<%= render "layouts/navbar" %>
+<div class="jumbotron">
+        <h1>Paris</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                <% if user_signed_in?%>
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Book a trip now!</a></p>
+        <% else %>
+          <p><a class="btn btn-lg btn-success" href="/users/sign_in" role="button">Sign in to book a trip now!</a></p>
+        <% end %>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Eiffel Tower</h2>
+          <p>The tower is the most-visited paid monument in the world. It also counts with two restaurants on which you can really try France's gastronomy </p>
+          <p><a class="btn btn-primary" href="http://www.toureiffel.paris/en.html" target="_blank" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Louvre</h2>
+          <p>It is the world's largest museum and a historic monument in Paris, France. A central landmark of the city, it is located on the Right Bank of the Seine in the city's 1st arrondissement. </p>
+          <p><a class="btn btn-primary" href="http://www.louvre.fr/en" target="_blank" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading</h2>
+          <p>A medieval Catholic cathedral on the Île de la Cité in the fourth arrondissement of Paris, France. The cathedral is widely considered to be one of the finest examples of French Gothic architecture, and is among the largest and most well-known church buildings in the world.</p>
+          <p><a class="btn btn-primary" href="http://www.notredamedeparis.fr/rubrique2.html" target="_blank" role="button">View details &raquo;</a></p>
+        </div>
+      </div>

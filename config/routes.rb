@@ -5,4 +5,11 @@ Rails.application.routes.draw do
     root :to => 'dashboard#index', as: :authenticated_root
   end
   root :to => 'dashboard#welcome'
+  get 'new_york' => 'dashboard#ny'
+  get 'welcome' => 'dashboard#welcome'
+  get 'rome' => 'dashboard#rome'
+  get 'paris' => 'dashboard#paris'
+  get 'cancun' => 'dashboard#cancun'
+  get 'index' => 'dashboard#index'
+
 end

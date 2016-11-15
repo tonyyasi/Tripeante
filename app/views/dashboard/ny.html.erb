@@ -1,0 +1,29 @@
+<%= render "layouts/navbar" %>
+<div class="jumbotron">
+        <h1>New York</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                <% if user_signed_in?%>
+          <p><a class="btn btn-lg btn-success" href="#" role="button">Book a trip now!</a></p>
+        <% else %>
+          <p><a class="btn btn-lg btn-success" href="/users/sign_in" role="button">Sign in to book a trip now!</a></p>
+        <% end %>
+</div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Statue of Liberty</h2>
+          <p> The Statue of Liberty is more than a monument. She is a beloved friend, a living symbol of freedom to millions around the world. These exhibits are a tribute to the people who created her, to those who built and paid for her, to the ideals she represents, and to the hopes she inspires. </p>
+          <p><a class="btn btn-primary" href="http://www.libertyellisfoundation.org/about-the-statue-of-liberty" target="_blank" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Central Park</h2>
+          <p> Pretty much the most iconic park of the world. Surrounded by beautiful trees and green hills, it is one of the preferred spot for travellers. </p>
+          <p><a class="btn btn-primary" href="http://www.centralparknyc.org/" target="_blank" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Museum of modern Art</h2>
+          <p>The Museum of Modern Art is a place that fuels creativity, ignites minds, and provides inspiration. With extraordinary exhibitions and the world's finest collection of modern and contemporary art.</p>
+          <p><a class="btn btn-primary" href="https://www.moma.org/" target="_blank" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
