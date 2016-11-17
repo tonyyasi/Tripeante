@@ -1,41 +1,71 @@
 <%= render "layouts/navbar" %>
+<style type="text/css" media="all">
+  .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+</style>
 <br>
 <br>
 <div class="container">
+  <h1>Available Packages</h1>
   <div class="panel panel-primary">
     <div class=panel-heading>
-      <h3 class=panel-title>Holiday Inn</h3>
+      <h3 class=panel-title>VIP Package</h3>
     </div>
-    <div class=panel-body> Panel content
+    <div class=panel-body>
+      <h4>Luxurios package with the best of the best. Five nights at the exclusive 5 star hotel Hilton, tickets for the Lion King and dinner reservations for the best restaurant in town</h4>
+      <h4>Comments</h4>
+      <br>
+      <h5>Bobby Johnson:</h5>
+      <p>A very nice package, I had the time of my life sharing the good things in life with my family</p>
+       <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+       </div>
+       <p><a class="btn btn-default" href="#" role="button">Choose Package! &raquo;</a></p>
     </div>
   </div>
    <div class="panel panel-primary">
     <div class=panel-heading>
-      <h3 class=panel-title>Hilton</h3>
+      <h3 class=panel-title>Business Package</h3>
     </div>
-    <div class=panel-body> Panel content
-    </div>
-  </div>
- <div class="panel panel-primary">
-    <div class=panel-heading>
-      <h3 class=panel-title>Best Western</h3>
-    </div>
-    <div class=panel-body> Panel content
-    </div>
-  </div>
- <div class="panel panel-primary">
-    <div class=panel-heading>
-      <h3 class=panel-title>Panel title</h3>
-    </div>
-    <div class=panel-body> Panel content
+    <div class=panel-body>
+       <h4>This package can help the people who plan on going on a business trip of any kind. It includes the hotel with breakfast, fast internet and your personal driver so you can move to any destiny you want.</h4>
+      <h4>Comments</h4>
+      <br>
+      <h5>Bobby Johnson:</h5>
+      <p>A very nice package, it helps you seal those deals you want to make.</p>
+       <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+       </div>
+        <p><a class="btn btn-default" href="#" role="button">Choose Package! &raquo;</a></p>
     </div>
   </div>
  <div class="panel panel-primary">
     <div class=panel-heading>
-      <h3 class=panel-title>Panel title</h3>
+      <h3 class=panel-title>Economic Package</h3>
     </div>
-    <div class=panel-body> Panel content
+    <div class=panel-body>
+       <h4>Just the essentials, this package provides the hotel for a weekend full of fun and adventure.</h4>
+      <h4>Comments</h4>
+      <br>
+      <h5>Bobby Johnson:</h5>
+      <p>A very nice package, it had everything I needed to have a trip around Europe</p>
+       <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+       </div>
+       <p><a class="btn btn-default" href="#" role="button">Choose Package! &raquo;</a></p>
     </div>
   </div>
-
 </div>

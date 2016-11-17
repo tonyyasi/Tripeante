@@ -1,9 +1,9 @@
 <%= render "layouts/navbar" %>
 <div class="jumbotron">
         <h1>Rome</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+        <p class="lead"> Place practically made for tourism, great choice traveller! </p>
         <% if user_signed_in?%>
-          <p><a class="btn btn-lg btn-success" href="#" role="button">Book a trip now!</a></p>
+          <p><a class="btn btn-lg btn-success" href="/hotels" role="button">Book a trip now!</a></p>
         <% else %>
           <p><a class="btn btn-lg btn-success" href="/users/sign_in" role="button">Sign in to book a trip now!</a></p>
         <% end %>
@@ -14,17 +14,17 @@
       <div class="row">
         <div class="col-lg-4">
           <h2>Colosseum</h2>
-          <p class="text-danger">The Colosseum or Coliseum, also known as the Flavian Amphitheatre, is an oval amphitheatre in the centre of the city of Rome, Italy. Built of concrete and sand, it is the largest amphitheatre ever built. </p>
-          <p><a class="btn btn-primary" href="http://www.rome.info/colosseum/" role="button">View details &raquo;</a></p>
+          <p>The Colosseum or Coliseum, also known as the Flavian Amphitheatre, is an oval amphitheatre in the centre of the city of Rome, Italy. Built of concrete and sand, it is the largest amphitheatre ever built. </p>
+          <p><a class="btn btn-primary" href="http://www.rome.info/colosseum/" target="_blank" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-lg-4">
           <h2>St. Peter's Basilica</h2>
           <p>The Papal Basilica of St. Peter in the Vatican, or simply St. Peter's Basilica, is an Italian Renaissance church in Vatican City, the papal enclave within the city of Rome.  </p>
-          <p><a class="btn btn-primary" href="http://www.vaticanstate.va/content/vaticanstate/en/monumenti/basilica-di-s-pietro.html" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-primary" href="http://www.vaticanstate.va/content/vaticanstate/en/monumenti/basilica-di-s-pietro.html" target="_blank" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-lg-4">
           <h2>MAXXI</h2>
           <p>The MAXXI, Italian: Museo nazionale delle arti del XXI secolo, or National Museum of the 21st Century Arts, is a national museum of contemporary art and architecture in the Flaminio quartiere of Rome, Italy.</p>
-          <p><a class="btn btn-primary" href="http://www.fondazionemaxxi.it/en/" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-primary" href="http://www.fondazionemaxxi.it/en/" target="_blank" role="button">View details &raquo;</a></p>
         </div>
       </div>
